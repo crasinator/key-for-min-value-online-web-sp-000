@@ -5,7 +5,7 @@ def key_for_min_value(hash)
 var_value = nil 
 var_key = nil 
   hash.each do |key, value| 
-    if var = nil
+    if var == nil
       var_value = value
       var_key = key
     else 
