@@ -6,7 +6,14 @@ var_value = nil
 var_key = nil 
   hash.each do |key, value| 
     if var = nil
-      var = value
-    elsif 
-
+      var_value = value
+      var_key = key
+    else 
+      if var_value > value
+        var_value = value
+        var_key = key
+      end 
+    end 
+  end 
+return var_key
 end
